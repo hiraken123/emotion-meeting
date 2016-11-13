@@ -38,7 +38,7 @@ public static class SavWav {
 			filename += ".wav";
 		}
 		
-		var filepath = Path.Combine(Application.persistentDataPath, filename);
+		var filepath = Path.Combine(Application.persistentDataPath+"/Data", filename);
 		
 		Debug.Log(filepath);
 		

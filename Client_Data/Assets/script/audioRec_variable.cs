@@ -7,6 +7,9 @@ public class audioRec_variable : MonoBehaviour {
 	float recTime = 5.0f;
 	float second = 0;
 	bool isRecording = false;
+	const string filePath = "testaaa";
+	[SerializeField]
+	Zip mZip;
 
 	public void OnStartRec(){
 		isRecording = true;
@@ -17,6 +20,9 @@ public class audioRec_variable : MonoBehaviour {
 	public void OnEndRec(){
 		isRecording = false;
 		OnStopRec();
+		//var zip = new Zip ();
+		mZip.OnZip ();
+		//Zip.ZipFromFile (filePath);
 	}
 
 	//-----------------------------------

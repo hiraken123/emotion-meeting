@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{7731C592-4441-B479-E943-0FD9775032F1}</ProjectGuid>
+	<ProjectGuid>{C1F019BA-7864-58B4-591B-CE4EFF0C497C}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -47,9 +47,18 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\script\SavWav.cs" />
+     <Compile Include="Assets\script\SendZip.cs" />
+     <Compile Include="Assets\script\Zip.cs" />
+     <Compile Include="Assets\script\ZlibStreamManager.cs" />
      <Compile Include="Assets\script\audioRec_variable.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity_4/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.9/Standalone/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Ionic.Zlib">
+ <HintPath>/Users/user/Desktop/音声認識ファイルハッカソン/emotion-meeting/Client_Data/Assets/script/Ionic.Zlib.dll</HintPath>
+ </Reference>
+ <Reference Include="ICSharpCode.SharpZipLib">
+ <HintPath>/Users/user/Desktop/音声認識ファイルハッカソン/emotion-meeting/Client_Data/Assets/script/ICSharpCode.SharpZipLib.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
